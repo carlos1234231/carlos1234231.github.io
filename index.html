@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Los Betas</title>
+    <link href="css/estilos.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="logo" height="50" width="325">
+        </div>
+    </header>
+    <section id="formulario">
+        <h2>
+            Registro
+        </h2>
+        <form name="nuevo usuario" method="POST" action="php/ConexionCrearUsuario.php">
+            Nickname:<br>
+            <input type="text" name="nickname" pattern="{a-zA-Z0-9}+" placeholder="Ingesa tu nickname" required><br>
+
+            Contraseña:<br>
+            <input type="password" name="contraseña" maxlength="20" autocomplete="new-password" placeholder="Ingresa tu contraseña" required><br>
+
+            Nombre:<br>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+
+            Apellidos:<br>
+            <input type="text" name="apellidos" placeholder="Ingresa tus apellidos" required><br>
+
+            Email:<br>
+            <input type="email" name="correo" placeholder="Ingresa tu email" required><br>
+
+            Edad:<br>
+            <input type="number" name="edad" minlength="15" placeholder="Ingresa tu edad" required><br>
+
+            Descripción:<br>
+            <textarea name="descripcion" placeholder="Ingresa tu descripción"></textarea><br>
+
+            <input type="submit" name="enviar" class="button" value="Registrar">
+            <input type="reset" class="button" value="Borrar">
+            <hr>
+        </form>
+    </section>
+
+    <section id="formulario2">
+        <h2>Iniciar Sesión</h2>
+        <form name="contacto" method="POST" action="php/Iniciar_sesion.php">
+            Nickname:<br>
+            <input type="text" name="nickname" placeholder="Ingesa tu nickname" required><br>
+
+            Contraseña:<br>
+            <input type="password" name="contraseña" autocomplete="off" placeholder="Ingresa tu contraseña" required><br>
+            <hr>
+
+            <input type="submit" name="enviar" class="button" value="Iniciar Sesión">
+        </form>
+    </section>
+</body>
+</html>

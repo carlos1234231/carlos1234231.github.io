@@ -1,0 +1,131 @@
+body{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; /*Margen centrado*/
+}
+
+header{
+    height: 16vh; /*100px aprox.*/
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0px;
+}
+
+header #logo{
+    float: left;
+}
+
+header .menu{
+    height: 16vh;
+    float: right;
+}
+
+header .menu ul li{
+    list-style: none;
+    float: left;
+}
+
+header .menu ul li a{
+    text-decoration: none; /*Quitar subrayado*/
+    background: #c3c3c3;
+    color: #000000;
+    padding: 10px 15px; /*relleno*/
+    font-size: 1.1rem; /*Equivalente a 16px*/
+}
+
+header .menu ul li a:hover{
+    background: #ff0000;
+    color: #00ff00;
+}
+
+#perfil{
+    height: 30vh;
+    border: 1px solid #000000;
+}
+
+#perfil img{
+    height: 30vh;
+    float: left;
+    border: 0px solid #000000;
+    width: "210"
+}
+
+#perfil h1{
+    font-size: 1.6rem;    
+    color: #0000ff;
+    text-align: center;
+}
+
+#perfil p{
+    color: #0000ff;
+    text-align: center;
+}
+
+#recuadros{
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    border: 0px solid #000000;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#recuadros .recuadro{
+    width: 297px;
+    overflow: hidden;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    color: #000000;
+    margin-left: 0px;
+    margin-right: 1px;
+    border: 1px solid #000000;
+}
+
+#recuadros .recuadro .parrafo{
+    color:rgb(138, 42, 228);
+    text-align: justify;
+}
+
+.boton{
+    text-decoration: none;
+    border: 1px solid #000000;
+    padding: 2px 2px;
+}
+
+.boton:hover{
+    background: #ff0000;
+    color: #c3c3c3;
+}
+
+footer{
+    height: 16vh;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    float: left;
+}
+
+#formulario{
+    width: 432px;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    float: left;
+}
+
+#formulario2{
+    width: 432px;
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    float: right;
+}
+
+.button:hover{
+    background: #0000ff;
+    color: #c3c3c3;
+    border: 2px solid #000000;
+    padding: 3px 3px;
+    text-decoration: none;
+}
